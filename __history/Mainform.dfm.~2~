@@ -70,7 +70,6 @@ object Form3: TForm3
       Height = 17
       Caption = 'man'
       TabOrder = 0
-      OnClick = rb1Click
     end
     object rb2: TRadioButton
       Left = 16
@@ -79,7 +78,6 @@ object Form3: TForm3
       Height = 17
       Caption = 'woman'
       TabOrder = 1
-      OnClick = rb2Click
     end
   end
 end

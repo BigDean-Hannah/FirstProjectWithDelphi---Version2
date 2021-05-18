@@ -17,8 +17,6 @@ type
     lbl2: TLabel;
     procedure btn1Click(Sender: TObject);
     procedure FillList;
-    procedure rb1Click(Sender: TObject);
-    procedure rb2Click(Sender: TObject);
   private
     { Private-Deklarationen }
   public
@@ -43,16 +41,6 @@ var
 begin
   InputString:= InputBox('Input Box', 'Prompt', 'Default string');
   lst1.Items.Add(InputString);
-end;
-
-procedure TForm3.rb1Click(Sender: TObject);
-begin
-  lbl2.Caption := rb1.Caption;
-end;
-
-procedure TForm3.rb2Click(Sender: TObject);
-begin
-  lbl2.Caption := rb2.Caption;
 end;
 
 end.
