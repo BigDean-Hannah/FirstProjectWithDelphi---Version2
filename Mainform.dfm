@@ -2,7 +2,7 @@ object Form3: TForm3
   Left = 0
   Top = 0
   Caption = 'First Project With Delphi'
-  ClientHeight = 256
+  ClientHeight = 397
   ClientWidth = 590
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -50,6 +50,32 @@ object Form3: TForm3
     Font.Height = -16
     Font.Name = 'Bradley Hand ITC'
     Font.Style = []
+    ParentFont = False
+    OnMouseLeave = lbl3MouseLeave
+  end
+  object lbl4: TLabel
+    Left = 24
+    Top = 280
+    Width = 223
+    Height = 25
+    Caption = 'Your personal information :'#13#10
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clMaroon
+    Font.Height = -19
+    Font.Name = 'Bradley Hand ITC'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbl5: TLabel
+    Left = 296
+    Top = 280
+    Width = 5
+    Height = 20
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clGreen
+    Font.Height = -16
+    Font.Name = 'Bradley Hand ITC'
+    Font.Style = [fsBold, fsItalic]
     ParentFont = False
   end
   object lst1: TListBox

@@ -20,6 +20,8 @@ type
     chk2: TCheckBox;
     chk3: TCheckBox;
     lbl3: TLabel;
+    lbl4: TLabel;
+    lbl5: TLabel;
     procedure btn1Click(Sender: TObject);
     procedure FillList;
     procedure rb1Click(Sender: TObject);
@@ -27,6 +29,7 @@ type
     procedure chk1Click(Sender: TObject);
     procedure chk2Click(Sender: TObject);
     procedure chk3Click(Sender: TObject);
+    procedure lbl3MouseLeave(Sender: TObject);
   private
     { Private-Deklarationen }
   public
@@ -66,6 +69,11 @@ var
 begin
   InputString:= InputBox('Input Box', 'Prompt', 'Default string');
   lst1.Items.Add(InputString);
+end;
+
+procedure TForm3.lbl3MouseLeave(Sender: TObject);
+begin
+  lbl5.Caption := lbl2.Caption + ' ' + lbl3.Caption;
 end;
 
 procedure TForm3.rb1Click(Sender: TObject);
