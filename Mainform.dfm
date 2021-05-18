@@ -3,7 +3,7 @@ object Form3: TForm3
   Top = 0
   Caption = 'First Project With Delphi'
   ClientHeight = 256
-  ClientWidth = 366
+  ClientWidth = 590
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -27,11 +27,24 @@ object Form3: TForm3
     ParentFont = False
   end
   object lbl2: TLabel
-    Left = 232
+    Left = 256
     Top = 184
-    Width = 106
+    Width = 89
     Height = 25
     Caption = 'your gender'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Bradley Hand ITC'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbl3: TLabel
+    Left = 384
+    Top = 184
+    Width = 121
+    Height = 25
+    Caption = 'your degree'#13#10
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -59,9 +72,9 @@ object Form3: TForm3
   object grp1: TGroupBox
     Left = 256
     Top = 48
-    Width = 73
+    Width = 89
     Height = 97
-    Caption = 'gender'
+    Caption = 'your gender'
     TabOrder = 2
     object rb1: TRadioButton
       Left = 16
@@ -80,6 +93,41 @@ object Form3: TForm3
       Caption = 'woman'
       TabOrder = 1
       OnClick = rb2Click
+    end
+  end
+  object grp2: TGroupBox
+    Left = 384
+    Top = 48
+    Width = 121
+    Height = 105
+    Caption = 'your degree'
+    TabOrder = 3
+    object chk1: TCheckBox
+      Left = 8
+      Top = 16
+      Width = 97
+      Height = 17
+      Caption = 'High school diploma'
+      TabOrder = 0
+      OnClick = chk1Click
+    end
+    object chk2: TCheckBox
+      Left = 8
+      Top = 40
+      Width = 97
+      Height = 17
+      Caption = 'Bachelor'
+      TabOrder = 1
+      OnClick = chk2Click
+    end
+    object chk3: TCheckBox
+      Left = 9
+      Top = 63
+      Width = 76
+      Height = 17
+      Caption = 'Master'
+      TabOrder = 2
+      OnClick = chk3Click
     end
   end
 end
