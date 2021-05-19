@@ -2,8 +2,8 @@ object Form3: TForm3
   Left = 0
   Top = 0
   Caption = 'First Project With Delphi'
-  ClientHeight = 256
-  ClientWidth = 590
+  ClientHeight = 499
+  ClientWidth = 642
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -29,8 +29,8 @@ object Form3: TForm3
   object lbl2: TLabel
     Left = 256
     Top = 184
-    Width = 89
-    Height = 25
+    Width = 82
+    Height = 20
     Caption = 'your gender'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
@@ -42,14 +42,66 @@ object Form3: TForm3
   object lbl3: TLabel
     Left = 384
     Top = 184
-    Width = 121
-    Height = 25
+    Width = 78
+    Height = 40
     Caption = 'your degree'#13#10
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
     Font.Name = 'Bradley Hand ITC'
     Font.Style = []
+    ParentFont = False
+    OnMouseLeave = lbl3MouseLeave
+  end
+  object lbl4: TLabel
+    Left = 24
+    Top = 280
+    Width = 223
+    Height = 20
+    Caption = 'Your personal information :'#13#10
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clMaroon
+    Font.Height = -19
+    Font.Name = 'Bradley Hand ITC'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbl5: TLabel
+    Left = 296
+    Top = 280
+    Width = 5
+    Height = 20
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clGreen
+    Font.Height = -16
+    Font.Name = 'Bradley Hand ITC'
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object lbl6: TLabel
+    Left = 8
+    Top = 336
+    Width = 44
+    Height = 20
+    Caption = 'Name'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -16
+    Font.Name = 'Bradley Hand ITC'
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object lbl7: TLabel
+    Left = 8
+    Top = 366
+    Width = 79
+    Height = 20
+    Caption = 'LastName'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -16
+    Font.Name = 'Bradley Hand ITC'
+    Font.Style = [fsBold, fsItalic]
     ParentFont = False
   end
   object lst1: TListBox
@@ -109,6 +161,7 @@ object Form3: TForm3
       Height = 17
       Caption = 'High school diploma'
       TabOrder = 0
+      OnClick = chk1Click
     end
     object chk2: TCheckBox
       Left = 8
@@ -117,6 +170,7 @@ object Form3: TForm3
       Height = 17
       Caption = 'Bachelor'
       TabOrder = 1
+      OnClick = chk2Click
     end
     object chk3: TCheckBox
       Left = 9
@@ -125,6 +179,21 @@ object Form3: TForm3
       Height = 17
       Caption = 'Master'
       TabOrder = 2
+      OnClick = chk3Click
     end
+  end
+  object edt1: TEdit
+    Left = 117
+    Top = 336
+    Width = 73
+    Height = 21
+    TabOrder = 4
+  end
+  object edt2: TEdit
+    Left = 117
+    Top = 363
+    Width = 73
+    Height = 21
+    TabOrder = 5
   end
 end

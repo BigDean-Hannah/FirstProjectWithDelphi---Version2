@@ -107,14 +107,16 @@ object Form3: TForm3
   object lbl8: TLabel
     Left = 8
     Top = 408
-    Width = 5
+    Width = 247
     Height = 20
+    Caption = 'Thanke you for visit my Project'
     Font.Charset = ANSI_CHARSET
     Font.Color = clPurple
     Font.Height = -16
     Font.Name = 'Bradley Hand ITC'
     Font.Style = [fsBold, fsItalic]
     ParentFont = False
+    OnMouseDown = lbl8MouseDown
   end
   object lst1: TListBox
     Left = 40
@@ -224,14 +226,5 @@ object Form3: TForm3
     Caption = 'btn2'
     TabOrder = 7
     OnClick = btn2Click
-  end
-  object btn3: TButton
-    Left = 248
-    Top = 344
-    Width = 161
-    Height = 25
-    Caption = 'fill editfelds and click me plz'
-    TabOrder = 8
-    OnClick = btn3Click
   end
 end

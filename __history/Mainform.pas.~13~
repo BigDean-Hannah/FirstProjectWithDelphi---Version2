@@ -29,7 +29,6 @@ type
     tv1: TTreeView;
     btn2: TButton;
     lbl8: TLabel;
-    btn3: TButton;
     procedure btn1Click(Sender: TObject);
     procedure FillList;
     procedure rb1Click(Sender: TObject);
@@ -39,7 +38,8 @@ type
     procedure chk3Click(Sender: TObject);
     procedure lbl3MouseLeave(Sender: TObject);
     procedure btn2Click(Sender: TObject);
-    procedure btn3Click(Sender: TObject);
+    procedure lbl8MouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
   private
     { Private-Deklarationen }
   public
@@ -88,11 +88,6 @@ begin
 
 end;
 
-procedure TForm3.btn3Click(Sender: TObject);
-begin
-  lbl8.Caption := 'Thanke you for visit my Project ' + edt1.Text + ' ' + edt2.Text;
-end;
-
 procedure TForm3.chk1Click(Sender: TObject);
 begin
   lbl3.Caption := chk1.Caption;
@@ -119,6 +114,11 @@ end;
 procedure TForm3.lbl3MouseLeave(Sender: TObject);
 begin
   lbl5.Caption := lbl2.Caption + ' ' + lbl3.Caption;
+end;
+
+procedure TForm3.lbl8MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+begin
+  lbl8.Caption := '' + edt1.Text + ' ' + edt2.Text;
 end;
 
 procedure TForm3.rb1Click(Sender: TObject);

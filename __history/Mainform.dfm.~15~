@@ -115,6 +115,7 @@ object Form3: TForm3
     Font.Name = 'Bradley Hand ITC'
     Font.Style = [fsBold, fsItalic]
     ParentFont = False
+    OnMouseDown = lbl8MouseDown
   end
   object lst1: TListBox
     Left = 40
@@ -228,10 +229,9 @@ object Form3: TForm3
   object btn3: TButton
     Left = 248
     Top = 344
-    Width = 161
+    Width = 75
     Height = 25
-    Caption = 'fill editfelds and click me plz'
+    Caption = 'click me plz'
     TabOrder = 8
-    OnClick = btn3Click
   end
 end

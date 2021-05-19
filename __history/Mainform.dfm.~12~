@@ -28,7 +28,7 @@ object Form3: TForm3
   end
   object lbl2: TLabel
     Left = 256
-    Top = 169
+    Top = 184
     Width = 82
     Height = 20
     Caption = 'your gender'
@@ -40,8 +40,8 @@ object Form3: TForm3
     ParentFont = False
   end
   object lbl3: TLabel
-    Left = 498
-    Top = 169
+    Left = 384
+    Top = 184
     Width = 78
     Height = 40
     Caption = 'your degree'#13#10
@@ -104,18 +104,6 @@ object Form3: TForm3
     Font.Style = [fsBold, fsItalic]
     ParentFont = False
   end
-  object lbl8: TLabel
-    Left = 8
-    Top = 408
-    Width = 5
-    Height = 20
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clPurple
-    Font.Height = -16
-    Font.Name = 'Bradley Hand ITC'
-    Font.Style = [fsBold, fsItalic]
-    ParentFont = False
-  end
   object lst1: TListBox
     Left = 40
     Top = 48
@@ -160,7 +148,7 @@ object Form3: TForm3
     end
   end
   object grp2: TGroupBox
-    Left = 472
+    Left = 384
     Top = 48
     Width = 121
     Height = 105
@@ -176,7 +164,7 @@ object Form3: TForm3
       OnClick = chk1Click
     end
     object chk2: TCheckBox
-      Left = 7
+      Left = 8
       Top = 40
       Width = 97
       Height = 17
@@ -209,7 +197,7 @@ object Form3: TForm3
     TabOrder = 5
   end
   object tv1: TTreeView
-    Left = 432
+    Left = 344
     Top = 296
     Width = 185
     Height = 145
@@ -217,21 +205,12 @@ object Form3: TForm3
     TabOrder = 6
   end
   object btn2: TButton
-    Left = 494
-    Top = 447
+    Left = 414
+    Top = 466
     Width = 75
     Height = 25
     Caption = 'btn2'
     TabOrder = 7
     OnClick = btn2Click
-  end
-  object btn3: TButton
-    Left = 248
-    Top = 344
-    Width = 161
-    Height = 25
-    Caption = 'fill editfelds and click me plz'
-    TabOrder = 8
-    OnClick = btn3Click
   end
 end
