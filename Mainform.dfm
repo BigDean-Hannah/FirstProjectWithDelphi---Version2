@@ -11,11 +11,12 @@ object Form3: TForm3
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
-    Left = 24
-    Top = 16
+    Left = 288
+    Top = 8
     Width = 166
     Height = 20
     Caption = 'Welcom to my project'
@@ -54,10 +55,10 @@ object Form3: TForm3
     OnMouseLeave = lbl3MouseLeave
   end
   object lbl4: TLabel
-    Left = 24
-    Top = 280
+    Left = 8
+    Top = 296
     Width = 223
-    Height = 20
+    Height = 48
     Caption = 'Your personal information :'#13#10
     Font.Charset = ANSI_CHARSET
     Font.Color = clMaroon
@@ -80,7 +81,7 @@ object Form3: TForm3
   end
   object lbl6: TLabel
     Left = 8
-    Top = 336
+    Top = 409
     Width = 44
     Height = 20
     Caption = 'Name'
@@ -93,7 +94,7 @@ object Form3: TForm3
   end
   object lbl7: TLabel
     Left = 8
-    Top = 366
+    Top = 435
     Width = 79
     Height = 20
     Caption = 'LastName'
@@ -117,16 +118,16 @@ object Form3: TForm3
     ParentFont = False
   end
   object lst1: TListBox
-    Left = 40
-    Top = 48
+    Left = 8
+    Top = 88
     Width = 153
     Height = 161
     ItemHeight = 13
     TabOrder = 0
   end
   object btn1: TButton
-    Left = 56
-    Top = 215
+    Left = 8
+    Top = 255
     Width = 121
     Height = 25
     Caption = 'Fill in the box above'
@@ -196,14 +197,14 @@ object Form3: TForm3
   end
   object edt1: TEdit
     Left = 117
-    Top = 336
+    Top = 409
     Width = 73
     Height = 21
     TabOrder = 4
   end
   object edt2: TEdit
     Left = 117
-    Top = 363
+    Top = 436
     Width = 73
     Height = 21
     TabOrder = 5
@@ -227,11 +228,20 @@ object Form3: TForm3
   end
   object btn3: TButton
     Left = 248
-    Top = 344
+    Top = 417
     Width = 161
     Height = 25
     Caption = 'fill editfelds and click me plz'
     TabOrder = 8
     OnClick = btn3Click
+  end
+  object btn4: TButton
+    Left = 8
+    Top = 40
+    Width = 233
+    Height = 25
+    Caption = 'select a item from combobox and click hear'
+    TabOrder = 9
+    OnClick = btn4Click
   end
 end

@@ -30,7 +30,6 @@ type
     btn2: TButton;
     lbl8: TLabel;
     btn3: TButton;
-    btn4: TButton;
     procedure btn1Click(Sender: TObject);
     procedure FillList;
     procedure rb1Click(Sender: TObject);
@@ -42,9 +41,8 @@ type
     procedure btn2Click(Sender: TObject);
     procedure btn3Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
-    procedure btn4Click(Sender: TObject);
   private
-    comb: TComboBox;
+    { Private-Deklarationen }
   public
     { Public-Deklarationen }
   end;
@@ -96,11 +94,6 @@ begin
   lbl8.Caption := 'Thanke you for visit my Project ' + edt1.Text + ' ' + edt2.Text;
 end;
 
-procedure TForm3.btn4Click(Sender: TObject);
-begin
-  MessageDlg('Selected text: ' + comb.Text, mtInformation, mbYesNo, 0);
-end;
-
 procedure TForm3.chk1Click(Sender: TObject);
 begin
   lbl3.Caption := chk1.Caption;
@@ -125,6 +118,8 @@ begin
 end;
 
 procedure TForm3.FormCreate(Sender: TObject);
+var
+  comb: TComboBox;
 begin
   //Initialize the combo box.
   comb := TComboBox.Create(Self);
